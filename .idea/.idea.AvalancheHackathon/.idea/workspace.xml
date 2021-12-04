@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14e38390-da8e-4250-96d6-528f3ac95a9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInteract.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Web3Unity/Scenes/WebLogin.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Web3Unity/Scenes/WebLogin.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvalancheHackathon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvalancheHackathon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArcadeMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArcadeMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +15,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OpenLinks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MintViaChain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OpenLinkProxy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/PlayerInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OpenLinks.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MintViaChain.cs" />
+      <option value="$PROJECT_DIR$/Assets/ArcadeMachine.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OpenLinkProxy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="21oMYLux0ZJNT2wtIh9RcQ41F0e" />
@@ -66,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638603036277</updated>
-      <workItem from="1638603051605" duration="4321000" />
+      <workItem from="1638603051605" duration="8417000" />
     </task>
     <servers />
   </component>

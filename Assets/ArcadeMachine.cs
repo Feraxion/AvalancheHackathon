@@ -5,20 +5,24 @@ using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 public class ArcadeMachine : MonoBehaviour
 {
+    public string webGLAddress; 
+    public OpenLinkProxy openUrlLib;
     SpriteRenderer sr;
     public Color highlightColor;
     public Color defaultColor;
 
     public VideoClip videoClip;
-    VideoPlayer vp;
+    public VideoPlayer vp;
     public int gameSceneBuildIndex;
+    
     public GameObject playTexture;
-    GameObject rentMintPanel;
+    
+    public GameObject rentMintPanel;
+    
     bool isEmpty;
     // Start is called before the first frame update
     void Start()
     {
-        vp = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
         sr = GetComponent<SpriteRenderer>();
 
 
@@ -51,12 +55,12 @@ public class ArcadeMachine : MonoBehaviour
         {
 
             Debug.Log("This is " + gameObject.name);
-            SceneManager.LoadScene(gameSceneBuildIndex);
-        
+           openUrlLib.OpenWebsite(webGLAddress);
+
         }
         else
         {
-           rentMintPanel.SetActive()
+            rentMintPanel.SetActive(true);
         }
     }
 }
