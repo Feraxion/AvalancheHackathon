@@ -3163,7 +3163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc428a8f32b7ea409a5e35c8ba4d9cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiPanel: {fileID: 376252488}
+  uiPanel: {fileID: 1651954404}
 --- !u!61 &1266189503
 BoxCollider2D:
   m_ObjectHideFlags: 0
