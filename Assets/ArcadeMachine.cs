@@ -13,19 +13,21 @@ public class ArcadeMachine : MonoBehaviour
     VideoPlayer vp;
     public int gameSceneBuildIndex;
     public GameObject playTexture;
+    GameObject rentMintPanel;
+    bool isEmpty;
     // Start is called before the first frame update
     void Start()
     {
         vp = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
         sr = GetComponent<SpriteRenderer>();
-        
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Highlight()
@@ -34,19 +36,27 @@ public class ArcadeMachine : MonoBehaviour
         vp.clip = videoClip;
         vp.Play();
 
-        sr.color = highlightColor ;
+        sr.color = highlightColor;
     }
     public void UnHighlight()
     {
-       playTexture.SetActive(false);
+        playTexture.SetActive(false);
         vp.Stop();
         sr.color = defaultColor;
     }
 
     public void Interaction()
     {
-        Debug.Log("This is " + gameObject.name);
-        SceneManager.LoadScene(gameSceneBuildIndex);
+        if (!isEmpty)
+        {
 
+            Debug.Log("This is " + gameObject.name);
+            SceneManager.LoadScene(gameSceneBuildIndex);
+        
+        }
+        else
+        {
+           rentMintPanel.SetActive()
+        }
     }
 }
