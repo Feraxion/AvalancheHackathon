@@ -8,6 +8,7 @@ TagManager:
   - BombEater
   - ArcadeMachine
   - VideoImage
+  - Masa
   layers:
   - Default
   - TransparentFX
