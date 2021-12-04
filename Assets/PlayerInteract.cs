@@ -21,7 +21,10 @@ public class PlayerInteract : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
+                if(interactedObject.GetComponent<ArcadeMachine>()!=null)
                 interactedObject.GetComponent<ArcadeMachine>().Interaction();
+                else if (interactedObject.GetComponent<MasaScript>() != null)
+                interactedObject.GetComponent<MasaScript>().Interact();
             }
         }
     }
@@ -33,13 +36,22 @@ public class PlayerInteract : MonoBehaviour
             interactedObject = collision.gameObject;
             interactedObject.GetComponent<ArcadeMachine>().Highlight();
         }
+        else if (collision.gameObject.CompareTag("Masa"))
+        {
+            interactedObject = collision.gameObject;
+         
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(interactedObject== collision.gameObject)
         {
-            interactedObject.GetComponent<ArcadeMachine>().UnHighlight();
+            if (interactedObject.GetComponent<ArcadeMachine>() != null)
+                interactedObject.GetComponent<ArcadeMachine>().UnHighlight();
+            else if (interactedObject.GetComponent<MasaScript>() != null)
+                interactedObject.GetComponent<MasaScript>().ClosePanel();
+
             interactedObject = null;
 
         }
