@@ -8,7 +8,8 @@ public class MintViaChain : MonoBehaviour
 {
     public TMP_InputField inputFieldText;
     private string inputURL;
-    
+    public GameObject mintPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,11 @@ public class MintViaChain : MonoBehaviour
         
         //inputUrl
         /////???????
+    }
+
+    public void CloseTab()
+    {
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

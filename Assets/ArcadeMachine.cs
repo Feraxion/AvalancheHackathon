@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
@@ -19,11 +20,16 @@ public class ArcadeMachine : MonoBehaviour
     
     public GameObject rentMintPanel;
     
-    bool isEmpty;
+    public bool isEmpty;
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+
+        if (isEmpty)
+        {
+            sr.color = Color.red;
+        }
 
 
     }
@@ -36,9 +42,17 @@ public class ArcadeMachine : MonoBehaviour
 
     public void Highlight()
     {
-        playTexture.SetActive(true);
-        vp.clip = videoClip;
-        vp.Play();
+        if (!isEmpty)
+        {
+            playTexture.SetActive(true);
+            vp.clip = videoClip;
+            vp.Play();
+        }
+        else
+        {
+           rentMintPanel.SetActive(true);
+        }
+        
 
         sr.color = highlightColor;
     }
@@ -46,7 +60,14 @@ public class ArcadeMachine : MonoBehaviour
     {
         playTexture.SetActive(false);
         vp.Stop();
-        sr.color = defaultColor;
+        if (isEmpty)
+        {
+            sr.color = Color.red;
+        }
+        else
+        {
+            sr.color = defaultColor;
+        }
     }
 
     public void Interaction()
@@ -55,7 +76,7 @@ public class ArcadeMachine : MonoBehaviour
         {
 
             Debug.Log("This is " + gameObject.name);
-           openUrlLib.OpenWebsite(webGLAddress);
+            openUrlLib.OpenWebsite(webGLAddress);
 
         }
         else
