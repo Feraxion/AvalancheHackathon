@@ -48,10 +48,7 @@ public class ArcadeMachine : MonoBehaviour
             vp.clip = videoClip;
             vp.Play();
         }
-        else
-        {
-           rentMintPanel.SetActive(true);
-        }
+        
         
 
         sr.color = highlightColor;
